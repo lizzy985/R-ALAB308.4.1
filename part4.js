@@ -23,3 +23,10 @@
 
   origin.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: "25" });
   console.log(origin);
+
+  let sum = 0;
+  origin.forEach(element => {
+    sum += parseInt(element.age)
+  });
+  let avgAge = sum / origin.length;
+  console.log("The average age is: " + avgAge);
